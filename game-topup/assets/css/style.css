@@ -1,0 +1,287 @@
+/* Main Styles */
+:root {
+  --primary-color: #ff5722;
+  --secondary-color: #e64a19;
+  --accent-color: #ff9800;
+  --success-color: #4caf50;
+  --warning-color: #ffc107;
+  --danger-color: #f44336;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --gray-dark: #343a40;
+  --gray: #6c757d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f8fa;
+}
+
+/* Game Cards */
+.game-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+  height: 140px;
+  object-fit: cover;
+}
+
+/* Voucher Cards */
+.voucher-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.voucher-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-card img {
+  height: 140px;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+/* Payment Method Cards */
+.payment-method-card {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+  cursor: pointer;
+}
+
+.payment-method-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.payment-method-card.selected {
+  border-color: var(--primary-color);
+  background-color: rgba(255, 87, 34, 0.05);
+}
+
+/* Payment Cards */
+.payment-card {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e9ecef;
+}
+
+.payment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Feature Icons */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Contact Icons */
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* Social Icons */
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  background-color: var(--primary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-3px);
+}
+
+/* Step Numbers */
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Form Styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25);
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+/* Package Cards */
+.package-card {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.package-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.package-card.selected {
+  border-color: var(--primary-color);
+  background-color: rgba(255, 87, 34, 0.05);
+}
+
+/* Hero Carousel */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  bottom: 20px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.package-card:hover,
+.payment-method-card:hover {
+    border: 2px solid #0d6efd;
+    cursor: pointer;
+}
+
+.package-card.selected,
+.payment-method-card.selected {
+    border: 2px solid #0d6efd;
+    background-color: #f0f8ff;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1.1rem;
+  }
+
+  .game-card img,
+  .voucher-card img {
+    height: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    padding: 10px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.875rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
